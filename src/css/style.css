@@ -23,11 +23,12 @@ header {
     margin: 0;
     font-size: 35px;
     font-weight: 600;
+    padding-bottom: 4%;
 }
 
 
 
-ul {
+nav ul {
     display: inline-flex;
     align-items: center;
     justify-content: flex-end;
@@ -35,19 +36,88 @@ ul {
     margin: 0;
 }
 
-li {
+nav ul li {
     display: inline;
     margin-right: 22%;
 }
 
-li:last-child {margin: 0;}
+nav ul li:last-child {margin: 0;}
 
-li a {
+nav ul li a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 17px;
 }
 
-li a:hover {
+nav ul li a:hover {
     color: #118DA8;
+}
+
+main {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.home_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_container__man_img-decorate {
+    position: absolute;
+    left: 16px;
+    top: 120px;
+    
+}
+
+.home_container__man_img-man {
+    border-radius: 15px;
+}
+
+.home_container__man_img {
+    margin-right: 4%;
+
+}
+
+.home_container__text_title {
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 11px;
+    background-image: url(../icons/next.svg);
+}
+
+.home_container__text_listen-label {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.home_container__text_listen-platforms {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.home_container__text_listen-platforms li {
+    display: inline;
+    margin-right: 1%;
 }
