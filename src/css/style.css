@@ -93,6 +93,7 @@ main {
     font-size: 70px;
     color: #FFFFFF;
     font-weight: 400;
+    margin-bottom: 10%;
 }
 
 .underline {
@@ -117,6 +118,10 @@ main {
 .home_container__text_listen-label {
     color: #FFFFFF;
     font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: normal;
+    margin-bottom: 5%;
 }
 
 .home_container__text_listen-platforms {
@@ -131,13 +136,14 @@ main {
 }
 
 .episodes_container {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 
 .episodes_container__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8%;
 }
 
 .episodes_container__header-title {
@@ -325,6 +331,7 @@ main {
 .email_container {
     padding-top: 8%;
     /* padding-left: 5%; */
+    margin-bottom: 15%;
 }
 
 .email_container-main_form {
@@ -389,4 +396,59 @@ main {
     border: none;
     cursor: pointer;
     font-weight: 700;
+}
+
+.comment_container {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5%;
+    column-gap: 1.5%;
+    justify-content: stretch;
+    margin-bottom: 15%;
+    /* justify-items: center;
+    align-items: center; */
+
+}
+
+.comment_container-article {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 32px;
+    padding-left: 8%;
+    /* width: 323px; */
+}
+
+.comment_container-article_text {
+    color: #FFFFFF;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+    margin-right: 8%;
+    margin-bottom: 5%;
+}
+
+.comment_container-article_author {
+    color: #FFFFFFB2;
+    margin-bottom: 10%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: normal;
+}
+
+footer {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.social_networks .logo {
+    margin-bottom: 2%;
+}
+
+.social_networks img:not(
+    img:last-child
+) {
+    margin-right: 1%;
 }
